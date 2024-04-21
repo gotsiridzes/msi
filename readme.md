@@ -160,3 +160,57 @@ Storage technology offers several advantages that are crucial for modern computi
 * Performance Optimization: Advanced storage technologies such as SSDs (Solid-State Drives) and NVMe (Non-Volatile Memory Express) offer high-speed data access and low latency, improving overall system performance and responsiveness.
 * Cost Efficiency: Storage solutions come in a range of options with varying costs per gigabyte or terabyte of storage. Organizations can choose cost-effective storage solutions that meet their performance, capacity, and budgetary requirements.
 
+* File storage, also known as file-level storage or file-based storage, is a hierarchical storage system for organizing and storing data. Data is kept in files, then arranged into folders and structured into a hierarchy of directories and subdirectories.
+* Block storage is a technology used to store data in blocks. The blocks are then kept separately, each with its own unique identity. Developers use block storage for computer settings requiring rapid, efficient, and dependable data transport.
+* Object storage is an architecture designed to handle massive volumes of unstructured data. This data does not fit into, or cannot be structured into, a standard relational database with rows and columns. Examples include email, movies, images, web pages, audio files, sensor data, and media and online content (textual or non-textual).
+
+## Storage Types
+
+What is storage? Why we need storage?
+Storage is the collection of methods and technologies that can capture and hold digital information on media. Storage is normally described as the data storage devices that are connected to the computer through input or output operations that includes flash devices, hard disks, SAN, NAS, old tape systems and other different types of medium.
+
+1. DAS (Directly Attached Storage)
+This is as simple as it sounds DAS (Directly Attached Storage) device. A simple example of DAS is an external hard drive connected through a Universal Serial Bus (USB) cable. When we discuss about storage, we mean multiple drives, array of disks acting together in some way. The DAS concept is the same whether it’s one or 24 drives. In the same way it is the same concept regardless if we use a different cable. Basically, USB is much slow for large DAS units. DAS is well suited for a small-to-medium sized business where enough amounts of storage can be configured at a low startup cost. The DAS enclosure can be a separate cabinet that contains the additional disk drives.  An internal PCI-based RAID controller is typically configured in the server to connect to the storage.
+
+* Advantages of DAS
+    * It is simpler to setup and configure over NAS / SAN
+    * It is very cost effective than NAS / SAN in terms of raw storage medium
+    * It does not use IP addresses. Network is not necessary, Faster, more preformat and better latency over SAN / NAS
+    * Easier to deal with overall considering all things
+* Disadvantages of DAS
+    * Dedicated resources are needed for a single computer
+    * No economies of scale in sharing the storage
+    * We cannot manage the DAS via a network
+    * DAS needs a special hardware connection
+ 
+2. NAS (Network Attached Storage)
+Every computer that is irrespective of number of disks and the size of storage space available, can be considered a NAS if it acts as a file server on the network. Another way, a network attached storage (NAS) device is just a computer that shares files over the network. Theoretically it is almost identical to the external USB hard drive, except instead of a USB cable connection, a NAS will be using an Ethernet connection or some networking cable like LAN. NAS devices have a shareable resource. Multiple users and computers can use that resource. The disk arrays in both NAS and DAS are similar in function and operation, meaning you can create similar RAIDS and partition styles on both. NAS is perfect for SMBs and organizations that need a minimal-maintenance, reliable and flexible storage system that can quickly scale up as needed to accommodate new users or growing data.
+* Advantages of NAS
+    * It is the economical way to provide large storage to many persons or computers
+    * It is several times easier to setup and configure versus SAN
+    * It is easier way to provide RAID redundancy to mass amount of users
+    * It allows users permissions, folder privileges, restricted access to documents, etc
+    * It has higher utilization of storage resources
+* Disadvantages of NAS
+    * It requires IP Address and takes up network space
+    * It has slower latency and potentially maximum data-transfer issues
+    * It performance can be affected by network status
+ 
+3. SAN (Storage Area Network)
+SAN stands for Storage Area Network. With SAN we typically see the solutions that are used with medium-to-large size businesses, primarily due to the larger initial investment. SANs require a setup consisting of disk controllers, SAN switches, host bus adapters and fiber cables. The main benefit to a SAN-based storage solution is the ability to share the storage arrays to multiple servers.  This allows you to configure the storage capacity as needed, usually by a dedicated SAN administrator.  Higher levels of performance throughput are typical in a SAN environment and data is highly available through redundant disk controllers and drives. SAN is typically used in data centers, enterprises or virtual computing environments. It offers the speed of DAS with the sharing, flexibility and reliability of NAS. SAN storage is a very sophisticated option that’s meant to support complex, mission-critical applications.
+* Advantages of SAN
+    * It has economies of scale similar to that of NAS
+    * It has higher hardware utilization, similar to that of NAS
+    * It has speed similar or comparable to DAS
+    * It allows virtual environments, cloud computing, etc.
+* Disadvantages of SAN
+    * Its performance is affected by other SAN users
+    * Its performance is limited by network if configured incorrectly
+    * Better performance will still be found using DAS hardware
+    * It requires multiple static IP Addresses
+    * It generally consumes more IP addresses than NAS devices
+
+
+
+
+

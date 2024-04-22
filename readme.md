@@ -210,7 +210,31 @@ SAN stands for Storage Area Network. With SAN we typically see the solutions tha
     * It requires multiple static IP Addresses
     * It generally consumes more IP addresses than NAS devices
 
+# მონაცემთა საცავების კლასიფიკაცია 
+Traditional Storage; 
+Software defined storage;
+Hybrid Storage; 
+All flash storage; 
+Cloud Storage
 
+* Tier ტიპის მონაცემთა საცავები 
 
+* What is Tier 0 storage?
+    * The top tier of the storage hierarchy traditionally started with Tier 1 storage, but the advent of solid-state and flash storage gave rise to the concept of Tier 0 storage. Tier 0 delivers greater performance than Tier 1 storage, and much of the data formerly considered Tier 1 is now stored on Tier 0.
+    * Tier 0 storage is the fastest and most expensive layer in the hierarchy and is suited for mission-critical applications with little tolerance for downtime or latency. Data placed in a "zero tier" often involves scale-up transactional databases for analytics, financials, healthcare and security.
+    * The storage devices that make up Tier 0 might include flash SSDs or storage class memory (SCM) devices such as Optane SSDs or memory modules. The SSDs typically use Peripheral Component Interconnect Express (PCIe) or non-volatile memory express (NVMe) technologies to maximize performance. In some cases, an organization might use single-level cell (SLC) flash for its performance and reliability. Tier 0 storage might also utilize Random Access Memory (RAM) to optimize performance.
 
+* What is Tier 1 storage?
+    * Tier 1 data supports applications that are essential to an organization's ability to conduct its everyday business. Applications that rely on this data can usually tolerate higher latency and lower IOPS than Tier 0 applications. Storage costs are also more of a consideration than with Tier 0 storage, although Tier 1 still tends to use high-quality media -- such as double-parity RAID, to ensure the storage delivers the required latency and throughput, even if it's not as fast as Tier 0 storage.
+    * Tier 1 storage might use SSDs, HDDs or a combination of both in a hybrid drive configuration. Hybrid storage systems cache hot data in flash for quick retrieval and write the remaining data to the HDDs. The HDDs used for Tier 1 storage tend to be the fastest and most expensive, especially if they're the sole type of storage being used at this tier.
+
+* What is Tier 2 storage?
+    * Tier 2 storage is concerned with warm data, which might include old emails, classified files, historical financial information, or a variety of other types of information. This tier might also support reporting and analytics. Tier 2 storage typically requires greater capacity for longer durations, so the emphasis shifts from performance to cost-effectiveness.
+    * Tier 2 storage often serves as an organization's secondary storage, hosting Tier 0 and Tier 1 backups as part of a business continuity and disaster recovery (BC/DR) strategy. Tier 2 storage makes it possible to quickly restore key files if data on the primary storage becomes unavailable.
+    * The backup data on Tier 2 storage might include enterprise resource planning (ERP) systems, corporate email, back-office applications or any other application data that requires high reliability and security but doesn't need submillisecond latency.
+    * Tier 2 data is preserved on lower-cost media that might include HDDs, backup appliances, tape storage or cloud storage. The HDDs are commonly based on SATA, rather than incorporating pricier RAID arrays or SAS devices. Recovery requirements often drive the type of media used for Tier 2 storage.
+
+* What is Tier 3 storage?
+    * Tier 3 storage is an archive tier that sits behind the backup tier. The data in this tier is rarely accessed or updated, if at all. The tier's storage media might include slow-spinning HDDs, recordable compact discs, tape drives or archival cloud storage services -- whatever offers the least expensive storage compared to the other tiers. Tier 3 stores fixed copies of any content deemed to have a strategic value, however slight, or content that needs to be retained to comply with applicable regulations.
+    * Many organizations direct backups to Tier 2 storage for a set period of time then move the data to a Tier 3 tape library for long-term retention. The data might be retained indefinitely or set to expire by a certain date. In some cases, archival data is written to disk only once and never erased or updated.
 
